@@ -10,10 +10,14 @@
 <body>
     <script>
         async function main() {
-            const res = await fetch('http://124.223.90.239:8000/v3/weather/weatherInfo?cit=%E9%95%87&key=a97fc9be28659090089d644b16c3f8&extensions=all', {mode: 'no-cors'})
+            const res = await axios.get('https://restapi.amap.com/v3/weather/weatherInfo', {
+                params: {
+                    city: '北京',
+                    key: 'a97fc9be2538659090089d644b16c3f8',
+                    extensions: 'all'
+                }
+            })
             console.log(res)
-            const t = await res.json()
-            console.log(t)
         }
         main()
     </script>
