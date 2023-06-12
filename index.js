@@ -16,8 +16,9 @@ router.get('/v3/weather/weatherInfo', async (ctx) => {
         ctx.body = failReply
     }
 })
-server.use(router.routes()).use(router.allowedMethods())
 server.use(KoaCors())
+server.use(router.routes()).use(router.allowedMethods())
+
 
 server.listen(8000, () => {
     console.log('server is listenning on http://localhost:3000/')

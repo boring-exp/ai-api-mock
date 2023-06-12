@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <script>
+        async function main() {
+            const res = await fetch('http://124.223.90.239:8000/v3/weather/weatherInfo?cit=%E9%95%87&key=a97fc9be28659090089d644b16c3f8&extensions=all', {mode: 'no-cors'})
+            console.log(res)
+            const t = await res.json()
+            console.log(t)
+        }
+        main()
+    </script>
+</body>
+</html>
