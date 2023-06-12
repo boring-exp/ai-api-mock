@@ -1,7 +1,5 @@
 {
-    "showapi_res_error": "授权信息错误，请查看http请求头部字段的值是格式是否为'APPCODE 123456",
-    "showapi_res_id": "648709de0de3768b09867b4e",
-    "showapi_res_code": -1,
-    "showapi_fee_num": 1,
-    "showapi_res_body": null
+    "status": "0",
+    "info": "请检查请求参数中的key，extensions，area",
+    "infocode": "10001"
 }
